@@ -34,8 +34,22 @@ public class Main {
             6 6 6 6 6 6
          */
         // todo: output the expected text
+        for (int row = 1; row <= 6; row++){
+            if(row == 3){
+                continue;
+            }
+            if(row != 1) {
+                System.out.println();
+            }
 
-
+            for(int column = 1; column <= row; column++){
+                if(row == 5 && column > 2){
+                    break;
+                }
+                System.out.print(row + " ");
+            }
+        }
+        System.out.println();
     }
 
 }
